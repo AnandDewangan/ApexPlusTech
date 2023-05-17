@@ -1,0 +1,161 @@
+/* Using universal selector every browser has margin and padding are equal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Reusable Section */
+section {
+  display: grid;
+  grid-area: scenario;
+  min-height: 100vh;
+  background-color: rgb(20, 20, 20);
+  color: white;
+}
+.mainContainer {
+  display: grid;
+  grid-template-columns: 23% 77%;
+  grid-template-areas: "navbar scenario";
+}
+.container{
+  padding: 1.5rem 3rem;
+}
+.grid{ 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+input, select{
+  padding: 7px 15px;
+  background-color: rgb(20, 20, 20);
+  border: 1.5px solid rgb(84, 84, 84);
+  border-radius: 5px;
+  min-width: 250px;
+  color: rgb(134, 134, 134);
+}
+h4{
+  color: rgb(183, 182, 182);
+  margin-bottom: 10px;
+}
+a{
+  text-decoration: none;
+  color: black;
+  display: grid;
+  grid-area: navbar;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  transition: 0.2s ease-in-out;
+}
+button{
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+.green {
+  background-color: yellowgreen;
+}
+.green:hover{
+  background-color: rgb(117, 167, 16);
+}
+.orange{
+  background-color: orange;
+}
+.orange:hover{
+  background-color: rgb(194, 128, 4);
+}
+.blue{
+  background-color: rgb(25, 181, 242);
+}
+.blue:hover{
+  background-color: rgb(4, 129, 179);
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Asidebar design */
+.navBar {
+  padding-top: 3rem;
+  min-height: 100vh;
+  background-color: rgb(200, 206, 216);
+}
+a:hover {
+  background-color: rgb(228, 226, 226);
+  color: rgb(3, 145, 145);
+}
+
+/* Add Scenario Section */
+.scenarioColumn{
+  padding: 2rem 2.5rem;
+  background-color: rgb(45, 46, 46);
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+.buttonSection{
+  margin-top: 3rem;
+}
+
+/* All Scenarios Section */
+.allScenarios{
+  display: flex;
+  justify-content: space-between;
+}
+.allScenarioBox{
+  margin-top: 2rem;
+  width: 100%;
+}
+th, td{
+  padding: 10px;
+  border-radius: 5px;
+}
+thead{
+  background-color: rgb(69, 67, 67);
+  border-radius: 5px;
+}
+tbody{
+  background-color: gainsboro;
+  color: black;
+}
+
+/* Add Vehicle Section */
+.vehicleColumn{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 2rem;
+}
+
+/* Home Section */
+.homeButton{
+  text-align: end;
+  margin-bottom: 5rem;
+}
+.graph{
+  display: grid;
+  grid-template-columns: repeat(14, auto);
+  border: 2px solid green;
+  width: 97%;
+}
+.col{
+  width: 70px;
+  height: 60px;
+  border: 0.3px solid green;
+}
+.point1, .point2{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.point1{
+  background-color: red;
+}
+.point2{
+  background-color: blue;
+}
